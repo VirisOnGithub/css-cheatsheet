@@ -1,0 +1,106 @@
+[
+    {
+        "name" : "display",
+        "type" : "string"
+    },
+    {
+        "name" : "value",
+        "type" : "string"
+    },
+    {
+        "name" : "type",
+        "type" : "string"
+    },
+    {
+        "name" : "required",
+        "type" : "boolean"
+    },
+    {
+        "name" : "options",
+        "type" : "array"
+    },
+    {
+        "name" : "default",
+        "type" : "string"
+    },
+    {
+        "name" : "min",
+        "type" : "number"
+    },
+    {
+        "name" : "max",
+        "type" : "number"
+    },
+    {
+        "name" : "step",
+        "type" : "number"
+    },
+    {
+        "name" : "pattern",
+        "type" : "string"
+    },
+    {
+        "name" : "placeholder",
+        "type" : "string"
+    },
+    {
+        "name" : "label",
+        "type" : "string"
+    },
+    {
+        "name" : "description",
+        "type" : "string"
+    },
+    {
+        "name" : "help",
+        "type" : "string"
+    },
+    {
+        "name" : "error",
+        "type" : "string"
+    },
+    {
+        "name" : "validation",
+        "type" : "string"
+    },
+    {
+        "name" : "validationMessage",
+        "type" : "string"
+    },
+    {
+        "name" : "autofocus",
+        "type" : "boolean"
+    },
+    {
+        "name" : "autocomplete",
+        "type" : "boolean"
+    },
+    {
+        "name" : "autocapitalize",
+        "type" : "boolean"
+    },
+    {
+        "name" : "autocorrect",
+        "type" : "boolean"
+    },
+    {
+        "name" : "spellcheck",
+        "type" : "boolean"
+    },
+    {
+        "name" : "disabled",
+        "type" : "boolean"
+    },
+    {
+        "name" : "readonly",
+        "type" : "boolean"
+    },
+    {
+        "name" : "multiple",
+        "type" : "boolean"
+    },
+    {
+        "name" : "rows",
+        "type" : "number"
+    }
+]

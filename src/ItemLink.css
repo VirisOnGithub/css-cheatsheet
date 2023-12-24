@@ -1,0 +1,26 @@
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+}
+.inside{
+    border-radius: 0.5rem;
+    background-color:  var(--css-secondary);
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--css-tertiary);
+
+    padding: 0.5rem 3rem;
+
+    &:hover{
+        background-color: var(--css-primary);
+        color: var(--css-white);
+    }
+}
