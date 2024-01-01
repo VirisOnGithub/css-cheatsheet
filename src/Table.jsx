@@ -3,11 +3,11 @@ import './Table.css';
 import ItemLink from './ItemLink';
 import items from './items.json';
 
-const Table = () => {
+const Table = (e) => {
     return (
         <div className='bigcontainer'>
             {items.map((item) => (
-                <ItemLink key={item.name} name={item.name} />
+                <ItemLink key={item.name} name={item.name} pararef={e.pararef} offset={item.offset} />
             ))}
         </div>
     );

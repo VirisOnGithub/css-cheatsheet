@@ -1,106 +1,23 @@
 [
     {
         "name" : "display",
-        "type" : "string"
+        "presentation" : "display est utilisé pour régler l'affichage d'un élément. Il permet de définir le type d'affichage de l'élément (bloc, en ligne ou aucun), et le contexte de mise en page de ses descendants (flottants, en ligne ou en bloc).",
+        "syntax" : "display: block | inline | inline-block | none | flex | inline-flex | grid | inline-grid | table | table-cell",
+        "related" : ["position", "float", "clear"],
+        "offset" : 2
     },
     {
-        "name" : "value",
-        "type" : "string"
+        "name" : "border",
+        "presentation" : "border est une propriété raccourcie qui permet de définir la largeur, le style et la couleur d'une bordure en une seule déclaration.",
+        "syntax" : "border: [width] [style] [color]",
+        "related" : ["border-width", "border-style", "border-color"],
+        "offset" : 3
     },
     {
-        "name" : "type",
-        "type" : "string"
-    },
-    {
-        "name" : "required",
-        "type" : "boolean"
-    },
-    {
-        "name" : "options",
-        "type" : "array"
-    },
-    {
-        "name" : "default",
-        "type" : "string"
-    },
-    {
-        "name" : "min",
-        "type" : "number"
-    },
-    {
-        "name" : "max",
-        "type" : "number"
-    },
-    {
-        "name" : "step",
-        "type" : "number"
-    },
-    {
-        "name" : "pattern",
-        "type" : "string"
-    },
-    {
-        "name" : "placeholder",
-        "type" : "string"
-    },
-    {
-        "name" : "label",
-        "type" : "string"
-    },
-    {
-        "name" : "description",
-        "type" : "string"
-    },
-    {
-        "name" : "help",
-        "type" : "string"
-    },
-    {
-        "name" : "error",
-        "type" : "string"
-    },
-    {
-        "name" : "validation",
-        "type" : "string"
-    },
-    {
-        "name" : "validationMessage",
-        "type" : "string"
-    },
-    {
-        "name" : "autofocus",
-        "type" : "boolean"
-    },
-    {
-        "name" : "autocomplete",
-        "type" : "boolean"
-    },
-    {
-        "name" : "autocapitalize",
-        "type" : "boolean"
-    },
-    {
-        "name" : "autocorrect",
-        "type" : "boolean"
-    },
-    {
-        "name" : "spellcheck",
-        "type" : "boolean"
-    },
-    {
-        "name" : "disabled",
-        "type" : "boolean"
-    },
-    {
-        "name" : "readonly",
-        "type" : "boolean"
-    },
-    {
-        "name" : "multiple",
-        "type" : "boolean"
-    },
-    {
-        "name" : "rows",
-        "type" : "number"
+        "name" : "position",
+        "presentation" : "position permet de définir le mode de positionnement de l'objet",
+        "syntax" : "position : relative | absolute | fixed | sticky",
+        "related" : ["transform"],
+        "offset" : 4
     }
 ]
