@@ -1,8 +1,9 @@
 import React, { useRef } from 'react'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import Table from './Table'
 import PagesOrganizer from './PagesOrganizer'
-import items from './items.json'
+import ItemDisplayer from './ItemDisplayer'
+import {items} from './ItemDisplayer'
+
 
 const App = () => {
   const ref = useRef(null)
@@ -22,9 +23,9 @@ const App = () => {
       <ParallaxLayer offset={0} speed={1.5} style={{ backgroundColor: '#2965f1' }} />
       <ParallaxLayer offset={0} speed={2} style={{ backgroundColor: '#ebebeb'}} />
       <ParallaxLayer offset={1} speed={1}>
-        <Table pararef={ref}/>
+        <PagesOrganizer pararef={ref} />
       </ParallaxLayer>
-      <PagesOrganizer />
+      <ItemDisplayer />
     </Parallax>
   )
 }

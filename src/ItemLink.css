@@ -24,3 +24,18 @@
         color: var(--css-white);
     }
 }
+
+.po{
+    display: grid;
+    place-items: center;
+
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .po{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
