@@ -12,7 +12,7 @@ export const items = [
 
 export const itemNames = [
     'Centrer une div',
-    'À propos des grid'
+    'L\'organisation avec Grid'
 ]
 
 const ItemDisplayer = () => {
