@@ -1,0 +1,53 @@
+.container2{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px){
+    .container2{
+        flex-direction: column;
+    }
+}
+
+.flex-container2{
+    width: 50vw;
+    height: 5vh;
+    padding: 5%;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    resize: horizontal;
+    overflow: auto;
+}
+
+.name2{
+    flex: 1 0 calc(350%/16); 
+}
+
+.password2{
+    flex: 1 0 calc(300%/16);
+}
+
+.button2{
+    flex: 1 0 calc(150%/16);
+}
+
+@media screen and (max-width: 600px){
+    .name2{
+        flex: 1 0 calc(700%/16);
+    }
+
+    .password2{
+        flex: 1 0 calc(600%/16); 
+    }
+
+    .button2{
+        flex: 1 0 calc(300%/16);
+    }
+}

@@ -4,15 +4,21 @@ import { ParallaxLayer } from '@react-spring/parallax'
 // import items
 import HowToCenterADiv from './items/HowToCenterADiv'
 import PositioningWithGrid from './items/PositioningWithGrid'
+import PositioningWithFlex from './items/PositioningWithFlex'
+import Notification from './items/Notification'
 
 export const items = [
     <HowToCenterADiv />,
-    <PositioningWithGrid />
+    <PositioningWithGrid />,
+    <PositioningWithFlex />,
+    <Notification />
 ]
 
 export const itemNames = [
     'Centrer une div',
-    'L\'organisation avec Grid'
+    'L\'organisation avec Grid',
+    'L\'organisation avec Flexbox',
+    'Les notifications'
 ]
 
 const ItemDisplayer = () => {

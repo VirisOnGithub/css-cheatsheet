@@ -1,0 +1,49 @@
+.notification-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    & > .notification-explanation{
+        align-self: flex-start;
+    }
+    & > .notification{
+        width: 30vw;
+        height: 20vh;
+        background-color: red;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+    }
+    & > .notification-display{
+        background-color: var(--css-secondary);
+    }
+}
+
+.show{
+    animation: slideIn 5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+}
+
+@keyframes slideIn{
+    0%{
+        transform: translateX(-100%);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(0);
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .notification-container{
+        flex-direction: column;
+        & > .notification-explanation{
+            align-self: center;
+        }
+    }
+}
