@@ -18,6 +18,15 @@
     }
     & > .notification-display{
         background-color: var(--css-secondary);
+        width: 30vw;
+        height: 20vh;
+        font-size: 1.5rem;
+        border: 1px solid var(--css-tertiary);
+        border-radius: 1vw;
+        &:hover{
+            cursor: pointer;
+            background-color: var(--css-primary);
+        }
     }
 }
 
@@ -26,17 +35,47 @@
     transition: transform 0.5s ease-in-out;
 }
 
+.notification-loader{
+    background-color: black;
+    width: 0;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(0);
+    animation: loader 5s;
+    transition: transform 0.5s ease-in-out;
+}
+
 @keyframes slideIn{
     0%{
         transform: translateX(-100%);
     }
-    25%{
+    12%{
         transform: translateX(0);
+    }
+    88%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+@keyframes loader{
+    0%{
+        width: 0;
+    }
+    25%{
+        width: 0;
     }
     75%{
-        transform: translateX(0);
+        width: 30vw;
     }
-    
+    100%{
+        width: 30vw;
+    }
 }
 
 @media screen and (max-width: 800px) {
